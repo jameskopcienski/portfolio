@@ -52,22 +52,70 @@ table {
 /* ----------------------------- End of reset --------------------------- */
 
 body {
+	background-image: url("../img/img-noise-240x240.png");
+	background-repeat: repeat;
 	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	color: #333;
 }
 
 .container {
+	background-color: #fff;
+	border: 1px solid #000;
 	padding: 40px;
 }
 
 #name {
-	padding-top: 10px;
 	font-size: 40px;
 	font-weight: 100;
 }
 
-#contact {
-	text-align: center;
+#contact a {
+	float: right;
+}
+
+#contact a:hover {
+	text-decoration: none;
+}
+
+.tabbable {
+	margin-top: 40px;
+}
+
+.project-box {
+  box-sizing: border-box;
+	width: 400px;
+	height: 390px;
+	padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px #dddddd;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#dddddd));
+  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+  background-image: -moz-linear-gradient(#ffffff, #dddddd);
+  background-image: -o-linear-gradient(#ffffff, #dddddd);
+  background-image: linear-gradient(#ffffff, #dddddd);
+  background-clip: padding-box;
+}
+
+.lb-image {  /* Fix Lightbox width conflict with Bootstrap */
+max-width: inherit;
+}
+
+.code-button {
+	float: right;
+}
+
+.project-desc {
+	margin-top: 10px;
+}
+
+.project-buttons {
+	margin-top: 10px;
+}
+
+.project-buttons a:hover {
+	text-decoration: none;
 }
 
 
