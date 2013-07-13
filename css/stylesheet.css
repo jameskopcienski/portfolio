@@ -81,10 +81,15 @@ body {
 	margin-top: 40px;
 }
 
+.project-tab-desc {
+	text-align: center;
+}
+
 .project-box {
   box-sizing: border-box;
+  margin-top: 10px;
 	width: 400px;
-	height: 390px;
+	height: 460px;
 	padding: 10px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -118,6 +123,9 @@ max-width: inherit;
 	text-decoration: none;
 }
 
+.project-hash-tags {
+	margin-top: 10px;	
+}
 
 
 
