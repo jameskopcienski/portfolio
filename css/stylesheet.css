@@ -61,6 +61,8 @@ body {
 .container {
 	background-color: #fff;
 	border: 1px solid #000;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 40px;
 }
 
@@ -85,11 +87,23 @@ body {
 	text-align: center;
 }
 
-.project-box {
-  box-sizing: border-box;
+.project-row {
+	position: relative;
   margin-top: 10px;
+  margin-bottom: 40px;
+  width: 860px;
+  height: 420px;
+}
+
+.bottom-row {
+	margin-bottom: 0;
+}
+
+.project-box {
+	position: absolute;
+  box-sizing: border-box;
 	width: 400px;
-	height: 460px;
+	height: 420px;
 	padding: 10px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -103,12 +117,16 @@ body {
   background-clip: padding-box;
 }
 
-.lb-image {  /* Fix Lightbox width conflict with Bootstrap */
-max-width: inherit;
+.left-box {
+	left: 0;
 }
 
-.code-button {
-	float: right;
+.right-box {
+	right: 0;
+}
+
+.lb-image {  /* Fix Lightbox width conflict with Bootstrap */
+max-width: inherit;
 }
 
 .project-desc {
@@ -116,15 +134,22 @@ max-width: inherit;
 }
 
 .project-buttons {
-	margin-top: 10px;
+	position: absolute;
+	bottom: 30px;
+	width: 378px;
 }
 
 .project-buttons a:hover {
 	text-decoration: none;
 }
 
+.code-button {
+	float: right;
+}
+
 .project-hash-tags {
-	margin-top: 10px;	
+	position: absolute;
+	bottom: 0;	
 }
 
 
