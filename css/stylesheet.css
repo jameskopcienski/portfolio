@@ -152,6 +152,12 @@ max-width: inherit;
 	bottom: 0;	
 }
 
+#about-me img {
+	float: left;
+	margin-right: 25px;
+}
+
+
 
 
 
