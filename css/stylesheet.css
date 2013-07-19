@@ -52,23 +52,30 @@ table {
 /* ----------------------------- End of reset --------------------------- */
 
 body {
-	background-image: url("../img/img-noise-240x240.png");
-	background-repeat: repeat;
-	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	color: #333;
+	background-image: url("../img/13-old-parchment-background-lrg.jpg");
+/*	background-size: 100%;
+	background-repeat: repeat; */
+	font-family: Arial, Helvetica, sans-serif;
+	color: #4c4024;
 }
 
 .container {
-	background-color: #fff;
+	background-color: #f4e5c6;
 	border: 1px solid #000;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	padding: 40px;
+	padding: 40px 40px 20px 40px;
 }
 
 #name {
+	font-family: Raleway, Arial, Helvetica, sans-serif;
 	font-size: 40px;
 	font-weight: 100;
+	font-style: normal;
+}
+
+.button {
+	color: #4c4024;
 }
 
 #contact a {
@@ -83,6 +90,37 @@ body {
 	margin-top: 40px;
 }
 
+.nav-tabs {
+	border-color: #4c4024;
+}
+
+.nav-tabs > li > a {
+	border-bottom-color: #4c4024;         /* Necessary to retain bottom border on non-active tab after the background color is changed */
+	color: #988048;
+}
+
+.nav-tabs > li > a:link {
+	background-color: #f4e5c6;
+}
+
+.nav-tabs > li > a:hover {
+	background-color: #f4e5c6;
+	border-color: #988048;
+}
+
+.nav-tabs > .active > a {
+	border-top-color: #4c4024;
+	border-right-color: #4c4024;
+	border-left-color: #4c4024;
+}
+
+.nav-tabs > .active > a:hover {
+	background-color: #f4e5c6;
+	border-top-color: #4c4024;
+	border-right-color: #4c4024;
+	border-left-color: #4c4024;
+}
+
 .project-tab-desc {
 	text-align: center;
 }
@@ -91,8 +129,8 @@ body {
 	position: relative;
   margin-top: 10px;
   margin-bottom: 40px;
-  width: 860px;
-  height: 420px;
+  width: 940px;
+  height: 450px;
 }
 
 .bottom-row {
@@ -103,39 +141,47 @@ body {
 	position: absolute;
   box-sizing: border-box;
 	width: 400px;
-	height: 420px;
+	height: 450px;
 	padding: 10px;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #B4A992;
   border-radius: 5px;
-  box-shadow: 0px 0px 2px #dddddd;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#dddddd));
-  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
-  background-image: -moz-linear-gradient(#ffffff, #dddddd);
-  background-image: -o-linear-gradient(#ffffff, #dddddd);
-  background-image: linear-gradient(#ffffff, #dddddd);
+  box-shadow: 0px 0px 2px #B4A992;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#B4A992));
+  background-image: -webkit-linear-gradient(#ffffff, #B4A992);
+  background-image: -moz-linear-gradient(#ffffff, #B4A992);
+  background-image: -o-linear-gradient(#ffffff, #B4A992);
+  background-image: linear-gradient(#ffffff, #B4A992);
   background-clip: padding-box;
 }
 
 .left-box {
-	left: 0;
+	left: 40px;
 }
 
 .right-box {
-	right: 0;
+	right: 40px;
 }
 
 .lb-image {  /* Fix Lightbox width conflict with Bootstrap */
 max-width: inherit;
 }
 
+.project-title {
+	text-align: center;
+}
+
+.project-thumb {
+	margin-top: 10px;
+}
+
 .project-desc {
+	height: 100px;
 	margin-top: 10px;
 }
 
 .project-buttons {
-	position: absolute;
-	bottom: 40px;
+	margin-top: 5px;
+	height: 30px;
 	width: 378px;
 }
 
@@ -143,21 +189,33 @@ max-width: inherit;
 	text-decoration: none;
 }
 
+.web-button {
+	position: absolute;
+	left: 25px;
+}
+
 .code-button {
-	float: right;
+	position: absolute;
+	right: 25px;
 }
 
 .project-hash-tags {
-	position: absolute;
-	bottom: 0;
-	margin-bottom: 10px;
+	text-align: center;
+	margin-top: 12px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .project-hash-tags span {
   background-color: #eee;
+  color: #666;
   border: 1px solid #eee;
   padding: 2px;
   border-radius: 2px;
+}
+
+div[class="tooltip-inner"] {  /* Bootstrap tooltips */
+	font-size: 14px;
 }
 
 #about-me img {
@@ -165,7 +223,24 @@ max-width: inherit;
 	margin-right: 25px;
 }
 
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid #4c4024;
+}
 
+.footer-list {
+	margin-top: 10px;
+}
+
+.footer-list a:hover {
+  cursor: pointer;
+}
+
+.footer-link {
+	display: inline;
+	margin-right: 20px;
+	color: #988048;
+}
 
 
 
