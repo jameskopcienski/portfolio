@@ -293,6 +293,9 @@ div[class="tooltip-inner"] {  /* Bootstrap tooltips */
 .footer-link {
 	display: inline;
 	margin-right: 20px;
+}
+
+.footer-link a {
 	color: #988048;
 }
 

@@ -38,10 +38,10 @@ jQuery(function($) {
   $('a[data-toggle="tab"]').on('shown', function (e) {  // Set up links in the footer according to active tab
     var targetTab = e.target.text;
     if (targetTab == "Projects") {
-      $('#footer-about').replaceWith('<a id="footer-about"><li class="footer-link">About Me</li></a>');
+      $('#footer-about').replaceWith('<li id="footer-about" class="footer-link"><a>About Me</a></li>');
       $('#footer-projects').replaceWith('<li id="footer-projects" class="footer-link footer-active-link">Projects</li>');
     } else {
-      $('#footer-projects').replaceWith('<a id="footer-projects"><li class="footer-link">Projects</li></a>');
+      $('#footer-projects').replaceWith('<li id="footer-projects" class="footer-link"><a>Projects</a></li>');
       $('#footer-about').replaceWith('<li id="footer-about" class="footer-link footer-active-link">About Me</li>');
     }
   });
