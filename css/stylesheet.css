@@ -272,9 +272,13 @@ div[class="tooltip-inner"] {  /* Bootstrap tooltips */
 	font-size: 14px;
 }
 
-#about-me img {
+#head-shot {
 	float: left;
 	margin-right: 25px;
+}
+
+iframe {
+	margin-top: 10px;
 }
 
 .footer {
